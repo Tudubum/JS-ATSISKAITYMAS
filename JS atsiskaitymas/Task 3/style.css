@@ -67,17 +67,22 @@ img {
 }
 
 .card { 
-  width: 300px;
+  width: 330px;
   display: flex;
   margin: 10px;
   background-color: #e5e5e5;
   
 }
 
- h2{
-  padding-top: 30px;
+h4{
+  padding-top: 20px;
+}
+h6{
+  padding-top: 5px;
+}
+
+h4,h6{
   padding-left: 10px;
- 
 }
 
 #output {

@@ -29,8 +29,11 @@ button.addEventListener('click', function() {
       data.forEach(function(user) {
         html += `
           <div class="card">
-            <img src="${user.avatar_url}" alt="${user.login}" />
-            <h2>${user.login}</h2>
+            <img src="${user.avatar_url}" />
+            <div class="info">
+            <h4>Login name: ${user.login}</h4>
+            <h6>Github url: ${user.url}</h6>
+            </div>
           </div>
         `;
       });
