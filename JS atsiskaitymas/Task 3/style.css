@@ -59,3 +59,29 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+
+img {
+  height: 100px;
+  width: 100px
+}
+
+.card { 
+  width: 300px;
+  display: flex;
+  margin: 10px;
+  background-color: #e5e5e5;
+  
+}
+
+ h2{
+  padding-top: 30px;
+  padding-left: 10px;
+ 
+}
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
