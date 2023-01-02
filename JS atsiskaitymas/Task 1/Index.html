@@ -12,26 +12,18 @@
     <header>
       <!-- Header code-->
     </header>
-
     <main>
       <div class="wrapper">
         <h1 class="headline">Weight Converter</h1>
         <!-- Users input -->
-        <form>
-          <input type="number" id="search" placeholder="Enter kilograms..." 
-          oninput="svorioKonvertavimas(this.value)"
-          onchange="svorioKonvertavimas(this.value)"/>
+        <form id="form">
+          <input type="text" id="search" placeholder="Enter kilograms..." />
           <input type="submit" id="submit-btn" value="Calculate" />
+        </form>
         <!-- Place for output after form submission -->
-        <div id="output">
-          <p>Svarai (lb): <span id="Svarai"></span></p>
-          <p>Gramai (gr): <span id="Gramai"></span></p>
-          <p>Uncijos (oz): <span id="Uncijos"></span></p>
-        </div>  
-      </form>
+        <div id="output"></div>
       </div>
     </main>
-
     <footer>
       <!-- Footer code -->
     </footer>

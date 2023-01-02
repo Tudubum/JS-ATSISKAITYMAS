@@ -63,3 +63,14 @@ form {
     font-size: 2em;
   }
 }
+
+
+#output{
+  margin-left: 80px;
+}
+li{
+  padding: 5px;
+}
+h3{
+  margin-bottom: 10px;
+}

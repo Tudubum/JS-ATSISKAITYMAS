@@ -8,10 +8,25 @@ pamatyti jo pateikto svorio konvertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+let form = document.getElementById("form");
 
-function svorioKonvertavimas(value) {
-    document.getElementById("Svarai").innerHTML = value * 2.2046;
-    document.getElementById("Gramai").innerHTML = value / 0.001;
-    document.getElementById("Uncijos").innerHTML = value * 35.274;
-  }
+document.getElementById("submit-btn").addEventListener("click", function(e) {
+  e.preventDefault();
+  
+  let kilogramai = document.getElementById("search").value;
+  let svarai = kilogramai * 2.2046;
+  let gramai = kilogramai / 0.0010000;
+  let unicijos = kilogramai * 35.274;
 
+  document.getElementById("output").innerHTML = 
+  `
+  <h3>Jūsų konvertuoti duomenys:</h3>
+  <ul>
+    <li>Svarai: ${svarai} lbs</li>
+    <li>Gramai: ${gramai} g</li>
+    <li>Unicijos: ${unicijos} oz</li>
+  </ul>
+  `;
+  form.reset();
+});
+ 
