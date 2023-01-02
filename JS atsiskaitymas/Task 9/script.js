@@ -24,4 +24,8 @@ let movieList = [
     new Movie("Matrica", "Lana Wachowski", 90000000)
 ]
 
+console.log(movieList[0].wasExpensive());
+
+console.log(movieList[1].wasExpensive());
+
 console.log(movieList[2].wasExpensive());
