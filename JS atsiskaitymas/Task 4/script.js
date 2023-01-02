@@ -9,4 +9,3 @@ Pastaba: Informacija apie automobilį (brand) (jo kortelė) bei turi turėti
 bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
-const ENDPOINT = 'cars.json';
