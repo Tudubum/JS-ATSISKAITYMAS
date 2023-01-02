@@ -10,3 +10,11 @@ const audi = {
   year: 2005,
   color: 'white'
 };
+
+function showObjectKeys(audi){
+  return Object.keys(audi)
+}
+
+//tikrinam
+const verciamMasyvu = showObjectKeys(audi);
+console.log(verciamMasyvu)

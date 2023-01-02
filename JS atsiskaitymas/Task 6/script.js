@@ -19,3 +19,18 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+function getUserAverageAge(users) {
+  return users.reduce((totalAge, user) => totalAge + user.age, 0) / users.length;
+}
+
+function getUsersNames(users) {
+  return users.reduce((names, user) => {
+    names.push(user.name);
+    return names;
+  }, []);
+}
+
+//tikrinam
+console.log(getUserAverageAge(users));
+console.log(getUsersNames(users))
